@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biaya Komposisi</title>
+</head>
+<body>
+  <h1>Biaya Komposisi</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Produk</th>
+        <th>Komposisi </th>
+        <th>Usia</th>
+    </thead>
+    <tbody>
+      <% data.forEach(item => { %>
+        <tr>
+          <td><%= item.produk %></td>
+          <td><%= item.Komposisi %></td>
+          <td><%= item.Usia %></td>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>
